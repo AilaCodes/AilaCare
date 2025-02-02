@@ -1,6 +1,7 @@
 const express = require('express');
 const connectDB = require('./config/db');
 const healthRoutes = require('./routes/healthRoutes');
+require('dotenv').config(); // Load environment variables
 
 const app = express();
 const PORT = process.env.PORT || 5000;
