@@ -1,10 +1,19 @@
-// filepath: /AilaCareApp/backend/src/routes/healthRoutes.js
 const express = require('express');
-const healthController = require('../controllers/healthController');
+const connectDB = require('./config/db');
+const healthRoutes = require('./routes/healthRoutes');
 
-const router = express.Router();
+const app = express();
+const PORT = process.env.PORT || 5000;
 
-router.get('/conditions', healthController.getConditions);
-router.post('/track', healthController.trackHealth);
+// Connect to MongoDB
+connectDB();
 
-module.exports = router;
+// Middleware
+app.use(express.json());
+
+// Routes
+app.use('/api/health', healthRoutes);
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});

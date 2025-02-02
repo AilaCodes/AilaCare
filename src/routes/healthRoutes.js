@@ -1,9 +1,16 @@
-function setRoutes(app) {
-    const IndexController = require('../controllers/index');
-    const indexController = new IndexController();
+const express = require('express');
+const HealthCondition = require('../models/healthModel');
 
-    app.get('/items', indexController.getItems.bind(indexController));
-    app.post('/items', indexController.createItem.bind(indexController));
-}
+const router = express.Router();
 
-module.exports = setRoutes;
+// Get all health conditions
+router.get('/conditions', async (req, res) => {
+  try {
+    const conditions = await HealthCondition.find();
+    res.json(conditions);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
+module.exports = router;
