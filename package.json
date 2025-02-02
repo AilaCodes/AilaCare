@@ -1,19 +1,21 @@
+// filepath: /AilaCareApp/frontend/package.json
 {
-  "name": "my-fullstack-app-backend",
+  "name": "ailacare-frontend",
   "version": "1.0.0",
-  "description": "Backend for my fullstack application using Node.js and Express.",
+  "description": "Frontend for the AilaCare application",
   "main": "src/app.js",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js"
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'No tests specified' && exit 0"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "mongoose": "^5.10.9"
+    "axios": "^0.21.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
-  },
-  "author": "Your Name",
-  "license": "MIT"
+    "live-server": "^1.2.1"
+  }
 }
