@@ -1,6 +1,4 @@
-// filepath: /AilaCareApp/frontend/src/App.js
 import React from 'react';
-import ReactDOM from 'react-dom';
 import HomePage from './pages/HomePage';
 
 const App = () => {
@@ -11,4 +9,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export default App;
