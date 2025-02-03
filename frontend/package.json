@@ -2,7 +2,7 @@
   "name": "ailacare-frontend",
   "version": "1.0.0",
   "description": "Frontend for the AilaCare application",
-  "main": "src/app.js",
+  "main": "src/App.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -25,6 +25,7 @@
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
+      "last 1 edge version",
       "last 1 safari version"
     ]
   }
