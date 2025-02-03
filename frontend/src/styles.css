@@ -1,0 +1,65 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styles */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+h1 {
+  color: #343a40;
+  text-align: center;
+}
+
+/* HealthComponent styles */
+.health-component {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.health-component h2 {
+  color: #007bff;
+}
+
+.health-component ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.health-component li {
+  background-color: #e9ecef;
+  border: 1px solid #dee2e6;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/* StatusComponent styles */
+.status-component {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.status-component h2 {
+  color: #007bff;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 0;
+}
